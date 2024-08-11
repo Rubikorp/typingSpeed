@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { useDispatch } from 'react-redux'
 import { setTextToType } from './redux/typingSlice'
-import { textSamples } from './utils/textSamples'
+import { randomText } from './utils/textSamples'
 import TextInput from './components/TextInput'
 import Stats from './components/Stats'
 import Results from './components/Results'
@@ -19,9 +19,7 @@ const App = () => {
 	const dispatch = useDispatch()
 
 	useEffect(() => {
-		const randomText =
-			textSamples[Math.floor(Math.random() * textSamples.length)]
-		dispatch(setTextToType(randomText))
+		dispatch(setTextToType(randomText()))
 	}, [dispatch])
 
 	return (

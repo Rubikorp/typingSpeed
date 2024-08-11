@@ -1,4 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit'
+import { randomText } from '../utils/textSamples'
 
 const initialState = {
 	textToType: '',
@@ -23,8 +24,8 @@ const typingSlice = createSlice({
 		incrementErrors(state) {
 			state.errors += 1
 		},
-		reset(state) {
-			return initialState
+		reset(state, action) {
+			return { ...initialState, textToType: action.payload }
 		},
 		updateWPM(state, action) {
 			state.wpm = action.payload

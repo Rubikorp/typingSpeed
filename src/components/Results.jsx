@@ -2,6 +2,7 @@ import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { reset } from '../redux/typingSlice'
 import styled from 'styled-components'
+import { randomText } from '../utils/textSamples'
 
 const ResultsContainer = styled.div`
 	margin-top: 20px;
@@ -17,7 +18,7 @@ const Results = () => {
 			<h2>Результаты</h2>
 			<p>Ошибки: {errors}</p>
 			<p>Скорость печати (WPM): {wpm}</p>
-			<button onClick={() => dispatch(reset())}>
+			<button onClick={() => dispatch(reset(randomText()))}>
 				Перезапустить упражнение
 			</button>
 		</ResultsContainer>
