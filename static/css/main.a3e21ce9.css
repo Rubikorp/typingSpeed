@@ -1,0 +1,2 @@
+body{animation:gradient 10s ease infinite;background:linear-gradient(-45deg,#3c3c3c,#2c2c2c,#313131,#1e1e1e);background-size:400% 400%;overflow:hidden}@keyframes gradient{0%{background-position:0 50%}50%{background-position:100% 50%}to{background-position:0 50%}}
+/*# sourceMappingURL=main.a3e21ce9.css.map*/
