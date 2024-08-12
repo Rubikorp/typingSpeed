@@ -1,15 +1,19 @@
 import React from 'react'
 
+/* icons */
 import { faRotateBack } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
+/* style */
 import { Btn, BtnContainer } from '../styles/TextInputStyles'
+import { ResultsContainer } from '../styles/ResultStyles'
 
+/* utils */
 import { randomText } from '../utils/textSamples'
+
+/* redux */
 import { useDispatch, useSelector } from 'react-redux'
 import { reset } from '../redux/typingSlice'
-
-import { ResultsContainer } from '../styles/ResultStyles'
 
 const Results = () => {
 	const dispatch = useDispatch()

@@ -1,18 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
-import {
-	Character,
-	InputContainer,
-	BtnContainer,
-	Btn,
-} from '../styles/TextInputStyles'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faRotateBack, faSpinner } from '@fortawesome/free-solid-svg-icons'
 
-import { randomText } from '../utils/textSamples'
-import { updateWPM } from '../redux/typingSlice'
-import { measureWPM } from '../utils/wpm'
-import CountdownTimer from './Timer'
+/* redux */
+import { useDispatch, useSelector } from 'react-redux'
 import {
 	incrementErrors,
 	setFinished,
@@ -20,6 +9,27 @@ import {
 	setStartTime,
 	reset,
 } from '../redux/typingSlice'
+import { updateWPM } from '../redux/typingSlice'
+
+/* styles */
+import {
+	Character,
+	InputContainer,
+	BtnContainer,
+	Btn,
+} from '../styles/TextInputStyles'
+
+/* icons */
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faRotateBack, faSpinner } from '@fortawesome/free-solid-svg-icons'
+
+/* utils */
+import { randomText } from '../utils/textSamples'
+import { measureWPM } from '../utils/wpm'
+
+/* components */
+import CountdownTimer from './Timer'
+
 
 const TextInput = () => {
 	const dispatch = useDispatch()

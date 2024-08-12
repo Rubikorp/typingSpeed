@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
-import { measureWPM } from '../utils/wpm'
-import { setFinished, setStartTime } from '../redux/typingSlice'
 
+/* redux */
+import { useDispatch, useSelector } from 'react-redux'
+import { setFinished, setStartTime } from '../redux/typingSlice'
 import { updateWPM } from '../redux/typingSlice'
 import { TimerContainer, TimerSpan } from '../styles/TimerStyles'
+
+/* utils */
+import { measureWPM } from '../utils/wpm'
 
 const CountdownTimer = () => {
 	const startTime = useSelector(state => state.typing.startTime)
