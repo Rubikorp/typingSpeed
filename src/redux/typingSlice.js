@@ -1,5 +1,4 @@
 import { createSlice } from '@reduxjs/toolkit'
-import { randomText } from '../utils/textSamples'
 
 const initialState = {
 	textToType: '',

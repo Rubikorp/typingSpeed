@@ -1,4 +1,4 @@
-import styled, { keyframes, css } from 'styled-components'
+import styled, { css, keyframes } from 'styled-components'
 
 // Анимация для мигания
 const blink = keyframes`
@@ -15,18 +15,21 @@ const blink = keyframes`
 
 // Стили контейнера ввода текста
 const InputContainer = styled.div`
-	border: 2px solid #ccc;
-	padding: 10px;
-	font-size: 24px;
-	width: 100%;
+	position: relative;
+	padding: 20px;
+	font-size: 30px;
+	font-weight: bold;
+	width: 80%;
 `
 const anim = css`
 	animation: ${blink} 0.5s linear;
 `
 // Стили для символов
 const Character = styled.span`
+	padding-left: 3px;
 	color: ${props =>
-		props.iserror ? 'red' : props.iscorrect ? 'green' : 'black'};
-	animation: ${props => (props.iserror ? anim : 'none')};
+		props.isError ? 'red' : props.isCorrect ? 'green' : '#8D8D8D'};
+	animation: ${props => (props.isError ? anim : 'none')};
 `
-export { InputContainer, Character }
+
+export { Character, InputContainer }
