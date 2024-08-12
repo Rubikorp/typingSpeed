@@ -14,13 +14,13 @@ function measureWPM(text, elapsedTimeInSeconds) {
 	const words = text.trim().split(/\s+/).length; // считаем количество слов.
 	
 	// Преобразуем время выполнения в минуты.
-	const minutes = elapsedTimeInSeconds / 60; // преобразуем время в минуты.
+	const minutes = elapsedTimeInSeconds / 60; 
 	
 	// Вычисляем количество слов в минуту.
-	const wpm = words / minutes; // вычисляем WPM.
+	const wpm = words / minutes; 
 	
 	// Округляем результат до двух знаков после запятой и возвращаем его.
-	return wpm.toFixed(2); // возвращаем значение WPM.
+	return wpm.toFixed(2);
 }
 
 // Экспортируем функцию для использования в других модулях.

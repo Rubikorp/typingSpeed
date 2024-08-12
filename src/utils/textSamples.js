@@ -17,7 +17,7 @@ const textSamples = [
 const randomText = () => {
 	// Выбираем случайный индекс в пределах длины массива textSamples.
 	let text = textSamples[Math.floor(Math.random() * textSamples.length)]
-	return text // Возвращаем выбранный текст.
+	return text
 }
 
 // Экспортируем функцию для использования в других модулях.
