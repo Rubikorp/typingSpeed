@@ -15,7 +15,7 @@ const animTimer = css`
 
 const TimerContainer = styled.div`
 	position: absolute;
-	top: -50%;
+	top: -10%;
 	${animTimer}
 `
 

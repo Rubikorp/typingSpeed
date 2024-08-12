@@ -26,10 +26,10 @@ const AppContainer = styled.div`
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	background: linear-gradient(-45deg, #3c3c3c, #2c2c2c, #313131, #1e1e1e);
-	background-size: 400% 400%;
-	${animBg};
-	overflow: hidden;
+	// background: linear-gradient(-45deg, #3c3c3c, #2c2c2c, #313131, #1e1e1e);
+	// background-size: 400% 400%;
+	// ${animBg};
+	// overflow: hidden;
 `
 
 export { AppContainer }
