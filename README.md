@@ -19,22 +19,18 @@ Typing Speed Trainer — это интерактивное веб-приложе
 
 1. Клонируйте репозиторий:
 
-bash
 git clone https://github.com/Rubikorp/typingSpeed.git
 
 2. Перейдите в папку проекта:
 
-bash
 cd typingSpeed
 
 3. Установите зависимости:
 
-bash
 npm install
 
 4. Запустите проект:
 
-bash
 npm start
 
 5. Откройте ваш браузер и перейдите по адресу `http://localhost:3000`.
