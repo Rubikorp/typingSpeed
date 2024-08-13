@@ -37,16 +37,18 @@ const anim = css`
 	animation: ${blink} 0.5s linear;
 `
 
-const cursor = css`
-	&:after {
-		content: '|';
-		height: 100%;
-		position: absolute;
-		left: -2px;
-		color: yellow;
-		animation: ${cursorBlink} 1s ease-in-out infinite;
-	}
-`
+//bugs
+// const cursor = css`
+// 	&:after {
+// 		content: '|';
+// 		height: 100%;
+// 		position: absolute;
+// 		left: -2px;
+// 		color: yellow;
+// 		animation: ${cursorBlink} 1s ease-in-out infinite;
+// 	}
+// `
+
 // Стили для символов
 const Character = styled.span`
 	position: relative;
@@ -54,7 +56,7 @@ const Character = styled.span`
 	color: ${({ isError, isCorrect }) =>
 		isError ? 'red' : isCorrect ? 'green' : '#8D8D8D'};
 	animation: ${({ isError }) => (isError ? anim : 'none')};
-	${({ isChar }) => (isChar ? cursor : '')}
+	background: ${({ isChar }) => (isChar ? '#77777753' : 'none')};
 `
 
 const BtnContainer = styled.div`
